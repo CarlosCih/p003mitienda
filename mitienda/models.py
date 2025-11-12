@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 #modelo para almacenar las categorias de los productos
 class Categoria(models.Model):
@@ -13,6 +14,10 @@ class Categoria(models.Model):
 
     def __str__(self):
         return self.name
+    
+    #la funcion get_absolute_url devuelve la URL canónica para un objeto dado
+    def get_absolute_url(self):
+        return reverse('tienda:product_list_category', args=[self.slug])
 
 #modelo para almacenar los productos
 class Producto(models.Model):
@@ -31,3 +36,7 @@ class Producto(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def get_absolute_url(self):
+        return reverse('tienda:product_detail', args=[self.id, self.slug])
+    
