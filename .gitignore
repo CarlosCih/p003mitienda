@@ -1,0 +1,63 @@
+# ====================================
+# ARCHIVOS DE ENTORNO Y CONFIGURACIÓN
+# ====================================
+.env
+*.env
+*.ini
+*.cfg
+*.log
+
+# ====================================
+# ARCHIVOS DE PYTHON
+# ====================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ====================================
+# BASE DE DATOS LOCAL
+# ====================================
+*.sqlite3
+
+# ====================================
+# ENTORNOS VIRTUALES
+# ====================================
+venv/
+env/
+.venv/
+.virtualenv/
+ENV/
+env.bak/
+
+# ====================================
+# ARCHIVOS DEL SISTEMA
+# ====================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ====================================
+# COMPILACIÓN / TEMPORALES
+# ====================================
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# ====================================
+# CARPETAS DE PRUEBA O TEMPORALES
+# ====================================
+.idea/
+.vscode/
+__pypackages__/
+.mypy_cache/
+.pytest_cache/
+.coverage
+
+# ====================================
+# ARCHIVOS ESTÁTICOS Y MEDIA (opcional)
+# ====================================
+# Solo si generas archivos en runtime
+staticfiles/
+media/
